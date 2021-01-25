@@ -2,6 +2,7 @@ package com.api.mktplace.nyk_marketplace.converter;
 
 import com.api.mktplace.nyk_marketplace.dto.InventoryDTO;
 import com.api.mktplace.nyk_marketplace.entity.Inventory;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -6,15 +6,23 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.List;
+import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class InventoryStatus {
+public class InventoryStatusDTO {
 
     private List<Inventory> inventories;
+
+    @Id
+    private String correlationId;
+
     private String status;
-    private String message;
+    private String api_Key;
 }

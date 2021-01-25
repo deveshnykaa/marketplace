@@ -31,6 +31,8 @@ public class Inventory {
     private double invQty;
     private double salePrice;
 
+
+
     @Override
     public String toString() {
         return "Inventory{" +
